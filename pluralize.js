@@ -3,11 +3,11 @@
 function pluralize(noun, count) {
   // TODO: Implement this function.
   let result = undefined;
-  if (count > 1) {
+  if (count > 1 || count < 1) {
     result = count + " " + noun + "s";
   }
   else {
-    result = count + noun;
+    result = count + " " + noun;
   }
   return result;
 }
